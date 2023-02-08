@@ -56,4 +56,4 @@ container.appendChild(navBar);
 
 content.appendChild(container);
 
-export { content };
+export { content, container };
