@@ -2,7 +2,9 @@ import './style.css';
 
 const content = document.querySelector('.content');
 const container = document.createElement('div');
+container.className = 'container';
 const navBar = document.createElement('nav');
+navBar.className = 'nav-bar';
 const navBarLeft = document.createElement('div');
 const navBarRight = document.createElement('div');
 const navBarRightUList = document.createElement('ul');
@@ -27,7 +29,6 @@ navBarRightUList4a.href = '#';
 navBarRightUList5a.href = '#';
 
 navBarLeft.textContent = 'asdsa';
-navBarRightUList.className = 'links';
 
 navBarRightUList1a.textContent = 'Order Now';
 navBarRightUList2a.textContent = 'Home';
@@ -35,26 +36,6 @@ navBarRightUList3a.textContent = 'Gallery';
 navBarRightUList4a.textContent = 'Story';
 navBarRightUList5a.textContent = 'Visit';
 
-container.style.cssText = `
-width: 100vw;
-height: 100vh;
-`;
-container.style.cssText = `
-width: 100%;
-height: 100vh;
-`;
-navBar.style.cssText = `
-height: 100px;
-border: 1px red solid;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 0 30px;
-`;
-navBarRightUList.style.cssText = `
-display: flex;
-gap: 20px;
-`;
 navBarRightUList1.appendChild(navBarRightUList1a);
 navBarRightUList2.appendChild(navBarRightUList2a);
 navBarRightUList3.appendChild(navBarRightUList3a);
