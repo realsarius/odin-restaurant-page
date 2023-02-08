@@ -16,6 +16,7 @@ const navBarRightUList2a = document.createElement('a');
 const navBarRightUList3a = document.createElement('a');
 const navBarRightUList4a = document.createElement('a');
 const navBarRightUList5a = document.createElement('a');
+const navBarLefta = document.createElement('a');
 
 navBarRightUList1a.href = '#';
 navBarRightUList2a.href = '#';
@@ -23,7 +24,12 @@ navBarRightUList3a.href = '#';
 navBarRightUList4a.href = '#';
 navBarRightUList5a.href = '#';
 
-navBarLeft.textContent = 'asdsa';
+navBarLefta.href = '#';
+
+navBarLefta.textContent = 'TRÉMONT';
+navBarLeft.className = 'logo';
+
+navBarLeft.appendChild(navBarLefta);
 
 navBarRightUList1a.textContent = 'Order Now';
 navBarRightUList2a.textContent = 'Home';
@@ -50,6 +56,7 @@ navBar.appendChild(navBarRight);
 
 export {
   navBar,
+  navBarLefta,
   navBarRightUList1a,
   navBarRightUList2a,
   navBarRightUList3a,
