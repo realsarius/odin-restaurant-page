@@ -1,5 +1,3 @@
-import './style.css';
-
 const content = document.querySelector('.content');
 const container = document.createElement('div');
 container.className = 'container';
@@ -53,4 +51,9 @@ navBarRight.appendChild(navBarRightUList);
 navBar.appendChild(navBarLeft);
 navBar.appendChild(navBarRight);
 container.appendChild(navBar);
+
+// container.appendChild(mainContent);
+
 content.appendChild(container);
+
+export { content };
