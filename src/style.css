@@ -3,6 +3,78 @@
    License: none (public domain)
 */
 
+@font-face {
+  font-family: 'Jost', sans-serif;
+  src: url('./fonts/jost-100-hairline-webfont.woff2') format('woff2'),
+    url('./fonts/jost-100-hairline-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost', sans-serif;
+  src: url('./fonts/jost-200-thin-webfont.woff2') format('woff2'),
+    url('./fonts/jost-200-thin-webfont.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost', sans-serif;
+  src: url('./fonts/jost-300-light-webfont.woff2') format('woff2'),
+    url('./fonts/jost-300-light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost', sans-serif;
+  src: url('./fonts/jost-400-book-webfont.woff2') format('woff2'),
+    url('./fonts/jost-400-book-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost', sans-serif;
+  src: url('./fonts/jost-500-medium-webfont.woff2') format('woff2'),
+    url('./fonts/jost-500-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost', sans-serif;
+  src: url('./fonts/jost-600-semi-webfont.woff2') format('woff2'),
+    url('./fonts/jost-600-semi-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost', sans-serif;
+  src: url('./fonts/jost-700-bold-webfont.woff2') format('woff2'),
+    url('./fonts/jost-700-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost', sans-serif;
+  src: url('./fonts/jost-800-hevy-webfont.woff2') format('woff2'),
+    url('./fonts/jost-800-hevy-webfont.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost', sans-serif;
+  src: url('./fonts/jost-900-black-webfont.woff2') format('woff2'),
+    url('./fonts/jost-900-black-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
 html,
 body,
 div,
@@ -131,6 +203,10 @@ table {
 .content {
   width: 100vw;
   height: 100vh;
+  background-color: #191e29;
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Jost', sans-serif;
 }
 
 .container {
@@ -145,6 +221,7 @@ table {
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
+  font-weight: 500;
 }
 .container .nav-bar ul {
   display: flex;
@@ -153,5 +230,19 @@ table {
 
 .container .nav-bar ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .home-content {
+  width: 100%;
+  height: 100%;
 }
