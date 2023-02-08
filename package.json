@@ -1,0 +1,33 @@
+{
+  "name": "odin-restaurant-page",
+  "version": "1.0.0",
+  "description": "a restaurant page, what do you expect",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "build": "webpack --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realsarius/odin-restaurant-page.git"
+  },
+  "keywords": [
+    "restaurant",
+    "odin",
+    "project"
+  ],
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/realsarius/odin-restaurant-page/issues"
+  },
+  "homepage": "https://github.com/realsarius/odin-restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "reset-css": "^5.0.1"
+  }
+}
