@@ -465,7 +465,6 @@ table {
     overflow: scroll;
   }
   #gallery .gallery-content > * {
-    border: 1px red solid;
     height: 400px;
     width: 100%;
   }
