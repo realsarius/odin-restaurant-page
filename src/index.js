@@ -9,7 +9,6 @@ import {
   navBarRightUList4a,
 } from './nav-bar';
 import footer from './footer';
-import bgImage from './img/bg-image.jpg';
 
 const content = document.querySelector('.content');
 const container = document.createElement('div');

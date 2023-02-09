@@ -217,6 +217,8 @@ table {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.container {
+}
 
 .container .nav-bar {
   height: 100px;
@@ -319,11 +321,44 @@ table {
 #gallery .gallery-content {
   width: 80vw;
   height: 70vh;
-  display: flex;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: scroll;
+}
+#gallery .gallery-content > * {
+  border: 1px red solid;
+  height: 400px;
+  width: 100%;
+}
+#gallery .gallery-content .gallery1 {
+  background-image: url(./img/img-gallery1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#gallery .gallery-content .gallery2 {
+  background-image: url(./img/img-gallery2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#gallery .gallery-content .gallery3 {
+  background-image: url(./img/img-gallery3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#gallery .gallery-content .gallery4 {
+  background-image: url(./img/img-gallery4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#gallery .gallery-content .gallery5 {
+  background-image: url(./img/img-gallery5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #story {
@@ -418,6 +453,23 @@ table {
     display: inline;
     font-size: 1rem;
   }
+  #gallery .gallery-content {
+    width: 80vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+  }
+  #gallery .gallery-content > * {
+    border: 1px red solid;
+    height: 400px;
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 580px) {
@@ -430,13 +482,11 @@ table {
     padding: 0 30px;
     font-weight: 500;
   }
-  #story {
-    margin-top: 80px;
-  }
+
   #story .story-content {
     padding-top: 20px;
     white-space: pre-wrap;
-    overflow: visible;
+    overflow: scroll;
     text-overflow: ellipsis;
   }
   #story .story-content main {
