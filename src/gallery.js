@@ -1,8 +1,12 @@
+const gallery = document.createElement('div');
 const galleryContent = document.createElement('div');
+galleryContent.className = 'gallery-content';
 
-galleryContent.textContent = 'Gallery Content';
-galleryContent.id = 'gallery-content';
+gallery.id = 'gallery';
 
-galleryContent.style.display = 'none';
+galleryContent.textContent = 'Gallery';
 
-export default galleryContent;
+gallery.style.display = 'none';
+
+gallery.appendChild(galleryContent);
+export default gallery;

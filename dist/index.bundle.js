@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst galleryContent = document.createElement('div');\n\ngalleryContent.textContent = 'Gallery Content';\ngalleryContent.id = 'gallery-content';\n\ngalleryContent.style.display = 'none';\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (galleryContent);\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/gallery.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst gallery = document.createElement('div');\nconst galleryContent = document.createElement('div');\ngalleryContent.className = 'gallery-content';\n\ngallery.id = 'gallery';\n\ngalleryContent.textContent = 'Gallery';\n\ngallery.style.display = 'none';\n\ngallery.appendChild(galleryContent);\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (gallery);\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/gallery.js?");
 
 /***/ }),
 
@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _gallery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./gallery */ \"./src/gallery.js\");\n/* harmony import */ var _story__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./story */ \"./src/story.js\");\n/* harmony import */ var _nav_bar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./nav-bar */ \"./src/nav-bar.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n\n\n\n\n\n// import backgroundImage from './img/bg-image.jpg';\n\nconst content = document.querySelector('.content');\nconst container = document.createElement('div');\ncontainer.className = 'container';\n\ncontainer.appendChild(_nav_bar__WEBPACK_IMPORTED_MODULE_3__.navBar);\n\ncontainer.appendChild(_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\ncontainer.appendChild(_gallery__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\ncontainer.appendChild(_story__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\n\ncontainer.appendChild(_footer__WEBPACK_IMPORTED_MODULE_4__[\"default\"]);\n\n_nav_bar__WEBPACK_IMPORTED_MODULE_3__.navBarLefta.addEventListener('click', () => {\n  document.getElementById(_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"].id).style.display = 'flex';\n  document.getElementById(_gallery__WEBPACK_IMPORTED_MODULE_1__[\"default\"].id).style.display = 'none';\n  document.getElementById(_story__WEBPACK_IMPORTED_MODULE_2__[\"default\"].id).style.display = 'none';\n});\n\n_nav_bar__WEBPACK_IMPORTED_MODULE_3__.navBarRightUList2a.addEventListener('click', () => {\n  document.getElementById(_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"].id).style.display = 'flex';\n  document.getElementById(_gallery__WEBPACK_IMPORTED_MODULE_1__[\"default\"].id).style.display = 'none';\n  document.getElementById(_story__WEBPACK_IMPORTED_MODULE_2__[\"default\"].id).style.display = 'none';\n});\n\n_nav_bar__WEBPACK_IMPORTED_MODULE_3__.navBarRightUList3a.addEventListener('click', () => {\n  document.getElementById(_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"].id).style.display = 'none';\n  document.getElementById(_gallery__WEBPACK_IMPORTED_MODULE_1__[\"default\"].id).style.display = 'flex';\n  document.getElementById(_story__WEBPACK_IMPORTED_MODULE_2__[\"default\"].id).style.display = 'none';\n});\n\n_nav_bar__WEBPACK_IMPORTED_MODULE_3__.navBarRightUList4a.addEventListener('click', () => {\n  document.getElementById(_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"].id).style.display = 'none';\n  document.getElementById(_gallery__WEBPACK_IMPORTED_MODULE_1__[\"default\"].id).style.display = 'none';\n  document.getElementById(_story__WEBPACK_IMPORTED_MODULE_2__[\"default\"].id).style.display = 'flex';\n});\n\ncontent.appendChild(container);\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _gallery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./gallery */ \"./src/gallery.js\");\n/* harmony import */ var _story__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./story */ \"./src/story.js\");\n/* harmony import */ var _nav_bar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./nav-bar */ \"./src/nav-bar.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n/* harmony import */ var _img_bg_image_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./img/bg-image.jpg */ \"./src/img/bg-image.jpg\");\n\n\n\n\n\n\n\nconst content = document.querySelector('.content');\nconst container = document.createElement('div');\ncontainer.className = 'container';\n\ncontainer.appendChild(_nav_bar__WEBPACK_IMPORTED_MODULE_3__.navBar);\n\ncontainer.appendChild(_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\ncontainer.appendChild(_gallery__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\ncontainer.appendChild(_story__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\n\ncontainer.appendChild(_footer__WEBPACK_IMPORTED_MODULE_4__[\"default\"]);\n\n_nav_bar__WEBPACK_IMPORTED_MODULE_3__.navBarLefta.addEventListener('click', () => {\n  document.getElementById(_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"].id).style.display = 'flex';\n  document.getElementById(_gallery__WEBPACK_IMPORTED_MODULE_1__[\"default\"].id).style.display = 'none';\n  document.getElementById(_story__WEBPACK_IMPORTED_MODULE_2__[\"default\"].id).style.display = 'none';\n});\n\n_nav_bar__WEBPACK_IMPORTED_MODULE_3__.navBarRightUList2a.addEventListener('click', () => {\n  document.getElementById(_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"].id).style.display = 'flex';\n  document.getElementById(_gallery__WEBPACK_IMPORTED_MODULE_1__[\"default\"].id).style.display = 'none';\n  document.getElementById(_story__WEBPACK_IMPORTED_MODULE_2__[\"default\"].id).style.display = 'none';\n});\n\n_nav_bar__WEBPACK_IMPORTED_MODULE_3__.navBarRightUList3a.addEventListener('click', () => {\n  document.getElementById(_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"].id).style.display = 'none';\n  document.getElementById(_gallery__WEBPACK_IMPORTED_MODULE_1__[\"default\"].id).style.display = 'flex';\n  document.getElementById(_story__WEBPACK_IMPORTED_MODULE_2__[\"default\"].id).style.display = 'none';\n});\n\n_nav_bar__WEBPACK_IMPORTED_MODULE_3__.navBarRightUList4a.addEventListener('click', () => {\n  document.getElementById(_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"].id).style.display = 'none';\n  document.getElementById(_gallery__WEBPACK_IMPORTED_MODULE_1__[\"default\"].id).style.display = 'none';\n  document.getElementById(_story__WEBPACK_IMPORTED_MODULE_2__[\"default\"].id).style.display = 'flex';\n});\n\ncontent.appendChild(container);\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/index.js?");
 
 /***/ }),
 
@@ -66,7 +66,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst story = document.createElement('div');\n\nstory.textContent = 'Story';\nstory.id = 'story';\n\nstory.style.display = 'none';\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (story);\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/story.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst story = document.createElement('div');\nconst storyContent = document.createElement('div');\nconst title = document.createElement('h1');\nconst main = document.createElement('main');\n\nstoryContent.className = 'story-content';\n\nstory.id = 'story';\n\ntitle.textContent = 'STORY';\nmain.textContent =\n  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Egestas purus viverra accumsan in nisl nisi. Etiam sit amet nisl purus in mollis nunc. Nibh ipsum consequat nisl vel pretium. Fermentum dui faucibus in ornare quam viverra. Arcu non odio euismod lacinia at quis risus sed. Malesuada fames ac turpis egestas sed tempus. Consectetur adipiscing elit duis tristique sollicitudin. Suspendisse sed nisi lacus sed viverra tellus in hac.\\r\\n \\r\\nNeque laoreet suspendisse interdum consectetur libero id faucibus. Viverra vitae congue eu consequat ac felis. Enim sit amet venenatis urna cursus eget. Ultrices gravida dictum fusce ut placerat. Viverra accumsan in nisl nisi scelerisque eu ultrices. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Aliquet lectus proin nibh nisl condimentum id venenatis. Nunc congue nisi vitae suscipit tellus mauris a diam maecenas. Ornare arcu dui vivamus arcu felis bibendum ut.';\n\nstory.style.display = 'none';\n\nstoryContent.appendChild(title);\nstoryContent.appendChild(main);\nstory.appendChild(storyContent);\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (story);\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/story.js?");
+
+/***/ }),
+
+/***/ "./src/img/bg-image.jpg":
+/*!******************************!*\
+  !*** ./src/img/bg-image.jpg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"f66a0de1e3ad3db96bd8.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/bg-image.jpg?");
 
 /***/ })
 
@@ -109,6 +119,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -123,6 +145,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
