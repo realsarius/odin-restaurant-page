@@ -1,3 +1,5 @@
+import './style.css';
+
 import home from './home';
 import gallery from './gallery';
 import story from './story';

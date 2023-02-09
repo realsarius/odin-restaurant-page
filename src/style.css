@@ -328,7 +328,6 @@ table {
   overflow: scroll;
 }
 #gallery .gallery-content > * {
-  border: 1px red solid;
   height: 400px;
   width: 100%;
 }
@@ -421,7 +420,7 @@ table {
     color: white;
     font-size: 0.9rem;
     font-family: 'Jost', sans-serif;
-    background-image: url(null);
+    background-image: none;
     background-repeat: no-repeat;
   }
   .container {
