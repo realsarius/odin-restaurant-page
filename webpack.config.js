@@ -1,5 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   mode: 'development',
@@ -7,6 +10,7 @@ module.exports = {
     index: './src/index.js',
   },
   plugins: [
+    new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       templateContent: `
       <!DOCTYPE html>
@@ -15,7 +19,7 @@ module.exports = {
           <meta charset="UTF-8" />
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <link rel="stylesheet" href="../src/style.css" />
+          <link rel="stylesheet" href="./index.css" />
           <title>Restaurant Page</title>
         </head>
         <body>
@@ -34,7 +38,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
