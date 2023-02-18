@@ -8,21 +8,21 @@ const navBarRightUList = document.createElement('ul');
 const navBarRightUList2 = document.createElement('li');
 const navBarRightUList3 = document.createElement('li');
 const navBarRightUList4 = document.createElement('li');
-// const navBarRightUList5 = document.createElement('li');
+const navBarRightUList5 = document.createElement('li');
 
 // Links
 // const navBarRightUList1a = document.createElement('a');
 const navBarRightUList2a = document.createElement('a');
 const navBarRightUList3a = document.createElement('a');
 const navBarRightUList4a = document.createElement('a');
-// const navBarRightUList5a = document.createElement('a');
+const navBarRightUList5a = document.createElement('a');
 const navBarLefta = document.createElement('a');
 
 // navBarRightUList1a.href = '#';
 navBarRightUList2a.href = '#';
 navBarRightUList3a.href = '#';
 navBarRightUList4a.href = '#';
-// navBarRightUList5a.href = '#';
+navBarRightUList5a.href = '#';
 
 navBarLefta.href = '#';
 
@@ -35,19 +35,19 @@ navBarLeft.appendChild(navBarLefta);
 navBarRightUList2a.textContent = 'Home';
 navBarRightUList3a.textContent = 'Gallery';
 navBarRightUList4a.textContent = 'Story';
-// navBarRightUList5a.textContent = 'Visit';
+navBarRightUList5a.textContent = 'Image Slider';
 
 // navBarRightUList1.appendChild(navBarRightUList1a);
 navBarRightUList2.appendChild(navBarRightUList2a);
 navBarRightUList3.appendChild(navBarRightUList3a);
 navBarRightUList4.appendChild(navBarRightUList4a);
-// navBarRightUList5.appendChild(navBarRightUList5a);
+navBarRightUList5.appendChild(navBarRightUList5a);
 
 // navBarRightUList.appendChild(navBarRightUList1);
 navBarRightUList.appendChild(navBarRightUList2);
 navBarRightUList.appendChild(navBarRightUList3);
 navBarRightUList.appendChild(navBarRightUList4);
-// navBarRightUList.appendChild(navBarRightUList5);
+navBarRightUList.appendChild(navBarRightUList5);
 
 navBarRight.appendChild(navBarRightUList);
 
@@ -61,5 +61,5 @@ export {
   navBarRightUList2a,
   navBarRightUList3a,
   navBarRightUList4a,
-  // navBarRightUList5a,
+  navBarRightUList5a,
 };
